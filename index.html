@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <h2>Portofolio</h2>
+        <ul>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Sosial Media</a></li>
+            <li><a href="">Project</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div>
+            <h2>selamat datang di portofolio saya</h2>
+            <p>Saya Alghifari Amar Mukhasyafah</p>
+            <div class="flex">
+                <a href="" class="btn">Contact</a>
+                <a href="" class="btn">Email</a>
+            </div>
+        </div>
+        <img src="pepegweh.jpg" alt="foto profil" class="poto">
+    </header>
+
+    <section>
+        <h2>Education & Experience</h2>
+        <div class="main">
+            <div class="card1 slide-left">
+                <h2>SDN JIMBARAN KULON</h2>
+                <h2>SMPNT TERBUKA CANDI</h2>
+                <h2>SPNF SKB SIDOARJO</h2>
+            </div>
+            <div class="separator"></div>
+            <div class="card2 slide-right">
+                <h2>Admin Jual Beli Online</h2>
+                <h2>Freelance Design,WebDev,Joki Game & Tugas</h2>
+                <h2>Bersertifikasi Ms Office</h2>
+                <h2>F&B</h2>
+                <a href="" class="btn">Contact Me</a>
+            </div>
+
+
+
+        </div>
+        <div class="main2">
+            <h2>Project</h2>
+            <div class="flex">
+                <div class="card">
+                    <img src="prrojek1.png" class="projek" alt="web statis, informasi barang barang pokok">
+                    <p><a href="https://safamaster223.github.io/XinnStore/">Project Pertama</a></p>
+                </div>
+                <div class="card">
+                    <img src="prrojek1.png" class="projek" alt="web statis, informasi barang barang pokok">
+                    <p><a href="https://safamaster223.github.io/XinnStore/">Project Pertama</a></p>
+                </div>
+                <div class="card">
+                    <img src="prrojek1.png" class="projek" alt="web statis, informasi barang barang pokok">
+                    <p><a href="https://safamaster223.github.io/XinnStore/">Project Pertama</a></p>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="card">
+                    <img src="pepegweh.jpg" class="poto">
+                    <p>Project Pertama</p>
+                </div>
+                <div class="card">
+                    <img src="pepegweh.jpg" class="poto">
+                    <p>Project Pertama</p>
+                </div>
+                <div class="card">
+                    <img src="pepegweh.jpg" class="poto">
+                    <p>Project Pertama</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy;AlghifariAmarMukhasyafah</p>
+        <p>@email : <a href="">safamaster546@gmail.com</a></p>
+    </footer>
+    <script>
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                } else {
+                    entry.target.classList.remove('visible');
+                }
+            });
+        }, {
+            threshold: 0.2
+        });
+
+        document.querySelectorAll('.slide-left, .slide-right').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+
+</body>
+
+</html>
